@@ -1,6 +1,2 @@
 #!/bin/bash
-
-if mkdir -p /tmp/u
-then
-    mv [A-Z]* /tmp/u/
-fi
+mkdir -p /tmp/u; [ -n "$(mv [A-Z]* /tmp/u/ 2>/dev/null)" ] && echo "Files moved successfully."i
