@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ls -ap1 | sort -d -k1.1 | awk '{ORS = (NR % 2 == 0) ? ", " : "
+"} END {print ""}'
+
